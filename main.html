@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+    </style>
+    <title>Instagram main</title>
+  </head>
+  <body>
+    <nav id="top_nav">
+      <div class="top_nav__icon">
+        <img src="img/instagram.png" alt="nav__instagram_graphic_icon" />
+        <h2 class="instagram_logo">westagram</h2>
+        <input type="text" id="nav__search" placeholder="🔍 검색" />
+        <img src="img/explore.png" alt="nav__navigation_icon" />
+        <img src="img/heart.png" alt="nav__heart_icon" />
+        <img src="img/profile.png" alt="nav__bio_icon" />
+      </div>
+    </nav>
+    <div class="main">
+      <div class="main__feed__container">
+        <div class="main__friends_stories">
+          <div class="user1"></div>
+          <div class="user2"></div>
+          <div class="user3"></div>
+          <div class="user3"></div>
+        </div>
+        <article class="main__feed">
+          <div class="main__feed_uploader_bio">
+            <div class="main__feed_uploader_profile_img"></div>
+            <div class="main__feed_uploader_profile_userlocation">
+              <h3 class="main__feed_uploader_username">0713.jpg</h3>
+              <h4 class="main__feed_uploader_location">Seoul.Korea</h4>
+            </div>
+            <div class="main__feed_uploader_profile_setting">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="main__feed_uploader_image_frame">
+            <img src="img/feedimg.JPG" alt="upload_img" />
+          </div>
+          <div class="main__feed_interaction">
+            <img src="img/heart.png" alt="heart" />
+            <img src="img/comment.png" alt="comment" />
+            <img src="img/message.png" alt="message" />
+            <img src="img/bookmark.png" alt="bookmark" />
+          </div>
+        </article>
+      </div>
+      <div class="main-right">
+        <div class="main-right__my_bio">
+          <div class="main-right__my_bio_pic"></div>
+          <div class="main-right__profile_name_info">
+            <h3 class="main-right__my_bio_username">0713.jpg</h3>
+            <h5 class="main-right__my_bio_info">리달봉</h5>
+          </div>
+          <div class="main-right__my_bio_change">
+            <h6 class="main__feed_profile_change">전환</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
