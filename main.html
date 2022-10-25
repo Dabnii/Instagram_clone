@@ -12,13 +12,16 @@
   </head>
   <body>
     <nav id="top_nav">
-      <div class="top_nav__icon">
+      <div class="top_nav__icon_right">
         <img src="img/instagram.png" alt="nav__instagram_graphic_icon" />
+        <div class="top_nav__bar"></div>
         <h2 class="instagram_logo">westagram</h2>
+      </div>
         <input type="text" id="nav__search" placeholder="🔍 검색" />
-        <img src="img/explore.png" alt="nav__navigation_icon" />
-        <img src="img/heart.png" alt="nav__heart_icon" />
-        <img src="img/profile.png" alt="nav__bio_icon" />
+        <div class="top_nav__icon_left">
+          <img src="img/explore.png" alt="nav__navigation_icon" />
+          <img src="img/heart.png" alt="nav__heart_icon" />
+          <img src="img/profile.png" alt="nav__bio_icon" />
       </div>
     </nav>
     <div class="main">
@@ -45,16 +48,40 @@
           <div class="main__feed_uploader_image_frame">
             <img src="img/feedimg.JPG" alt="upload_img" />
           </div>
-          <div class="main__feed_interaction">
+          <section class="main__feed_interaction">
             <img src="img/heart.png" alt="heart" />
             <img src="img/comment.png" alt="comment" />
             <img src="img/message.png" alt="message" />
             <img src="img/bookmark.png" alt="bookmark" />
-          </div>
+          </section>
+          <section class="main__feed_likes_history">
+            <div class="main__feed_likes_user_pic"></div>
+            <span class="main__feed_likes_count"> Kim kardashian외 291명이 좋아합니다</span>
+          </section>
+          <section class="main__feed_ctx">
+            <span class="main__feed_ctx_username">0713.jpg</span>
+            <span class="main__feed_ctx_p">봉로포즈... 💍 🌹</span>
+          </section>
+          <section class="main__feed_comments">
+            <span class="main__feed_comments_first">
+              <span class="main__feed_comment_username">Kim</span>
+              <span class="main__feed_comment_ctx">So cute! 🥰</span>
+              <img src="img/heart.png" alt="heart" width="15px">
+            </span>
+          </section>
+          <section class="main__feed_comments_time_ago">
+             <span class="main__feed_comments_time">1시간 전</span>
+             <span class="main__feed_comments_translator">번역보가</span>
+          </section>
+          <section class="main__feed_comments_container">
+            <img src="img/smile.png" alt="" class="main__feed_comments_emoji">
+            <input type="text" class="main__feed_comments_input" placeholder="댓글 달기...">
+            <span class="main__feed_cooments_enter">게시</span>
+          </section>
         </article>
       </div>
       <div class="main-right">
-        <div class="main-right__my_bio">
+        <section class="main-right__my_bio">
           <div class="main-right__my_bio_pic"></div>
           <div class="main-right__profile_name_info">
             <h3 class="main-right__my_bio_username">0713.jpg</h3>
@@ -63,7 +90,14 @@
           <div class="main-right__my_bio_change">
             <h6 class="main__feed_profile_change">전환</h6>
           </div>
-        </div>
+        </section>
+        <section class="main-right__following_recommendation">
+          <span class="main_right__follwoing_for_you">회원님을 위한 추천</span>
+          <span class="main_right__follwoing_see_all">모두보기</span>
+        </section>
+        <section class="main-right__following_all">
+
+        </section>
       </div>
     </div>
     <script src="main.js"></script>

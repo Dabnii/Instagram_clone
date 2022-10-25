@@ -55,35 +55,51 @@ h6 {
 /* - - top nav - - */
 
 #top_nav {
+  height: 10vh;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-items: flex-start;
-  height: 10vh;
   background-color: #fff;
   border: 1px solid #dbdbdb;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   position: sticky;
   top: 0;
-  width: 100vw;
+  gap: 2rem;
+  padding: 0 4rem 0 4rem;
 }
 
-.top_nav__icon img h2 {
-  align-items: center;
-  justify-content: space-around;
-}
 
 input {
   appearance: unset;
   text-align: center;
   border: 1px solid #dbdbdb;
+  height: 1.4rem;
 }
 
 #top_nav img {
   height: 1.4rem;
 }
 
+.top_nav__icon_right{
+  display: flex;
+  align-items: center;
+}
+
 .instagram_logo {
   display: inline-block;
+}
+
+.top_nav__bar{
+  width: 1rem;
+  height: 1rem;
+  color: #000000;
+}
+
+.top_nav__icon_left{
+  gap: 1rem;
+  display: flex;
 }
 
 /* - - Main div - - */
