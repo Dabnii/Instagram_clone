@@ -36,6 +36,7 @@ h3 {
 }
 
 input {
+  outline: none;
   appearance: unset;
   justify-items: center;
   width: 15rem;
