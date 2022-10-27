@@ -5,76 +5,75 @@
 }
 
 body {
-  margin: 0;
   position: relative;
   display: flex;
+  margin: 0;
   flex-wrap: wrap;
+  background-color: #fafafa;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: #fafafa;
 }
 
 h2 {
   font-family: "Lobster", cursive;
-  font-size: 1rem;
-  display: block;
+  font-size: 1.2rem;
 }
 
 h3 {
+  margin: 0;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.8rem;
   font-weight: 800;
-  margin: 0;
 }
 
 h4 {
+  margin: 0;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.4rem;
   font-weight: 500;
-  margin: 0;
 }
 
 h5 {
+  margin: 0;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.4rem;
   color: grey;
   font-weight: 400;
-  margin: 0;
 }
 
 h6 {
+  margin: 0;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.7rem;
   color: rgb(72, 139, 255);
   font-weight: 500;
-  margin: 0;
 }
 
 /* - - top nav - - */
 
 #top_nav {
-  height: 10vh;
-  width: 100vw;
+  position: sticky;
   display: flex;
   flex-direction: row;
+  height: 10vh;
+  width: 100vw;
   justify-items: flex-start;
   background-color: #fff;
   border: 1px solid #dbdbdb;
   justify-content: space-evenly;
   align-items: center;
-  position: sticky;
   top: 0;
   gap: 2rem;
-  padding: 0 4rem 0 4rem;
+  padding: 0 28rem 0 28rem;
 }
 
 input {
   appearance: unset;
-  text-align: center;
-  border: 1px solid #dbdbdb;
   height: 1.4rem;
+  border: 1px solid #dbdbdb;
+  text-align: center;
 }
 
 #top_nav img {
@@ -97,20 +96,20 @@ input {
 }
 
 .top_nav__icon_left {
-  gap: 1rem;
   display: flex;
+  gap: 1.5rem;
 }
 
 /* - - Main div - - */
 
 .main {
   display: flex;
+  margin: 2rem;
   justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   align-content: center;
-  margin: 2rem;
   gap: 2rem;
 }
 
@@ -119,51 +118,51 @@ input {
 }
 
 .main__friends_stories {
-  background-color: rgb(255, 255, 255);
+  display: flex;
   height: 6rem;
   width: 20rem;
+  background-color: rgb(255, 255, 255);
   border: 1px solid #dbdbdb;
   border-radius: 1rem;
   justify-items: center;
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .main__friends_stories div {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid #dbdbdb;
   width: 4rem;
   height: 4rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #dbdbdb;
   border-radius: 50%;
 }
 
 .main__feed {
   position: relative;
   display: flex;
-  background-color: rgb(255, 255, 255);
   height: auto;
   width: 20rem;
+  margin-top: 1.6rem;
+  background-color: rgb(255, 255, 255);
   border: 1px solid #dbdbdb;
   border-radius: 1rem;
   flex-direction: column;
-  margin-top: 1.6rem;
 }
 
 .main__feed_uploader_profile_img {
   background-color: rgb(91, 84, 84);
   width: 2rem;
   height: 2rem;
-  border-radius: 50%;
   margin-right: 0.4rem;
+  border-radius: 50%;
 }
 .main__feed_uploader_bio {
-  align-items: center;
   display: inline-flex;
-  justify-items: center;
   width: inherit;
   height: 4rem;
   padding: 0.5rem;
+  align-items: center;
+  justify-items: center;
 }
 .main__feed_uploader_profile_userlocation {
   display: block;
@@ -175,18 +174,18 @@ input {
 }
 
 .main__feed_uploader_profile_setting {
+  position: absolute;
   display: inline-flex;
   padding: 1rem;
-  position: absolute;
   right: 0;
 }
 
 .main__feed_uploader_profile_setting div {
   width: 0.2rem;
   height: 0.2rem;
+  margin: 0.1rem;
   border-radius: 50%;
   background-color: grey;
-  margin: 0.1rem;
 }
 
 .main__feed_interaction {
@@ -199,11 +198,11 @@ input {
 
 .main__feed_ctx_username,
 .main__feed_comment_username {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 1rem;
+  margin: 0;
   color: rgb(0, 0, 0);
   font-weight: 500;
-  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
 }
 
 /* - - right div - - */
