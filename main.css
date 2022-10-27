@@ -72,6 +72,7 @@ h6 {
 input {
   appearance: unset;
   height: 1.4rem;
+  width: 13rem;
   border: 1px solid #dbdbdb;
   text-align: center;
 }
@@ -188,10 +189,6 @@ input {
   background-color: grey;
 }
 
-.main__feed_interaction {
-  padding: 0.5rem 0 0 0.5rem;
-}
-
 .main__feed_interaction img {
   height: 1.3rem;
 }
@@ -203,6 +200,11 @@ input {
   font-weight: 500;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1rem;
+}
+
+.bookmark {
+  position: absolute;
+  right: 0;
 }
 
 /* - - right div - - */
