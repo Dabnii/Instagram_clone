@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 body {
@@ -23,21 +24,18 @@ h2 {
 
 h3 {
   margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 0.8rem;
   font-weight: 800;
 }
 
 h4 {
   margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 0.4rem;
   font-weight: 500;
 }
 
 h5 {
   margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 0.4rem;
   color: grey;
   font-weight: 400;
@@ -45,7 +43,6 @@ h5 {
 
 h6 {
   margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 0.7rem;
   color: rgb(72, 139, 255);
   font-weight: 500;
@@ -59,6 +56,7 @@ h6 {
   flex-direction: row;
   height: 10vh;
   width: 100vw;
+  padding: 0 28rem 0 28rem;
   justify-items: flex-start;
   background-color: #fff;
   border: 1px solid #dbdbdb;
@@ -66,7 +64,6 @@ h6 {
   align-items: center;
   top: 0;
   gap: 2rem;
-  padding: 0 28rem 0 28rem;
 }
 
 input {

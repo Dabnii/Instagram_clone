@@ -6,19 +6,35 @@ console.log(thisIsId);
 console.log(thisIsPassword);
 console.log(thisIsLoginBtn);
 
+function activeButton() {
+  thisIsLoginBtn.classList.remove("button_a");
+  thisIsLoginBtn.classList.add("active");
+  thisIsLoginBtn.disabled = false;
+}
+function inactiveButton() {
+  thisIsLoginBtn.classList.remove("active");
+  thisIsLoginBtn.classList.add("button_a");
+  thisIsLoginBtn.disabled = true;
+}
+
 function handleClick(event) {
   const inputID = document.querySelector("#id-input").value;
   const inputPW = document.querySelector("#password-input").value;
+  console.log(inputID, inputPW);
 
-  if (inputID.length >= 1 && inputPW.length >= 8) {
-    thisIsLoginBtn.classList.remove("button_a");
-    thisIsLoginBtn.classList.add("active");
-    disabled = false;
-  } else {
-    thisIsLoginBtn.classList.remove("active");
-    thisIsLoginBtn.classList.add("button_a");
-    disabled = true;
-  }
+  const isValid = inputID.length >= 1 && inputPW.length >= 8;
+
+  isValid ? activeButton() : inactiveButton();
+
+  // if (inputID.length >= 1 && inputPW.length >= 8) {
+  //   thisIsLoginBtn.classList.remove("button_a");
+  //   thisIsLoginBtn.classList.add("active");
+  //   thisIsLoginBtn.disabled = false;
+  // } else {
+  //   thisIsLoginBtn.classList.remove("active");
+  //   thisIsLoginBtn.classList.add("button_a");
+  //   thisIsLoginBtn.disabled = true;
+  // }
 }
 
 thisIsId.addEventListener("keyup", handleClick);
