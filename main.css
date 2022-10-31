@@ -37,14 +37,14 @@ h4 {
 h5 {
   margin: 0;
   font-size: 0.4rem;
-  color: grey;
+  color: rgb(128, 128, 128);
   font-weight: 400;
 }
 
 h6 {
   margin: 0;
   font-size: 0.7rem;
-  color: rgb(72, 139, 255);
+  color: #488bff;
   font-weight: 500;
 }
 
@@ -129,12 +129,23 @@ input {
 
 .main__friends_stories div {
   width: 4rem;
+  display: flex;
   height: 4rem;
   background-color: rgb(255, 255, 255);
   border: 1px solid #dbdbdb;
   border-radius: 50%;
+  align-items: flex-end;
+  justify-content: center;
 }
 
+.main__feed_uploader_username {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  padding: 0;
+}
 .main__feed {
   position: relative;
   display: flex;
@@ -162,6 +173,7 @@ input {
   align-items: center;
   justify-items: center;
 }
+
 .main__feed_uploader_profile_userlocation {
   display: block;
 }
@@ -199,11 +211,38 @@ input {
   font-size: 1rem;
 }
 
+.main__feed_comments_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main__feed_comments_input {
+  border-radius: 3rem;
+}
+
+.main__feed_comments_enter {
+  appearance: unset;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  color: grey;
+}
+
+.main__feed_comments_emoji {
+  width: 1.4rem;
+}
+
 .bookmark {
   position: absolute;
   right: 0;
 }
 
+.comment_area {
+  background-color: aqua;
+}
+.comment_area li {
+  list-style: none;
+}
 /* - - right div - - */
 
 .main-right {
