@@ -24,7 +24,7 @@ commentForm.addEventListener("submit", (event) => {
   const newCommentCtx = commentInput.value;
   const newComment = document.createElement("li");
   document.innerHTML = `<li> ${newCommentCtx} </li>`;
-  console.log("wow");
+  console.log(newCommentCtx);
 });
 
 //무언가 되어가고 있다!
