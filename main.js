@@ -4,6 +4,7 @@ const commentBtn = document.querySelector(".main__feed_comments_enter");
 const commentArea = document.querySelector(".comment_area");
 const addComment = document.getElementsByClassName("letAddNewComment");
 let commentValue = "";
+//값이 없다로 시작하기 위함
 
 commentInput.addEventListener("keyup", function () {
   commentValue = commentInput.value;
@@ -25,7 +26,7 @@ commentForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const newCommentCtx = commentInput.value;
   const newComment = document.createElement("li");
-  newComment.innerHTML = `<li> ${newCommentCtx} </li>`;
+  newComment.innerHTML = `<li> <span><b>0713.jpg</b></span>   ${newCommentCtx} </li>`;
   addComment[0].appendChild(newComment);
 });
 

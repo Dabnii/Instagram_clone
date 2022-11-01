@@ -237,9 +237,6 @@ input {
   right: 0;
 }
 
-.comment_area {
-  background-color: aqua;
-}
 .comment_area li {
   list-style: none;
 }
